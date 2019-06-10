@@ -1,0 +1,14 @@
+.menu {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.menu ul {
+  padding: 1rem;
+  margin:0px;
+  background-color: lightblue;
+}
+
+.menu ul div {
+  display: inline-block;
+  padding-right: 2.5rem
+}
