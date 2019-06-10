@@ -1,0 +1,24 @@
+.comment {
+  margin: 2%;
+  padding: 3%;
+}
+
+.avatar {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right:5%;
+}
+
+.message {
+  display: inline-block;
+  font-size: smaller;
+}
+
+.time {
+  color: gray;
+}
