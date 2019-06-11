@@ -24,9 +24,10 @@ class Reports extends React.Component {
           <Comment />
           <Comment />
         </div>
-        <div className='new-comment'>
-          Type your comment here!
-        </div>
+        <form className='new-comment'>
+          <input type='text' placeholder='Type your comment here...' />
+          <input type='submit' value='SEND' />
+        </form>
       </div>
     )
   }
