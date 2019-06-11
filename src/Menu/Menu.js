@@ -4,13 +4,6 @@ import './Menu.css'
 import MenuItem from './MenuItem'
 
 class Menu extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      visitors: 50
-    }
-  }
-
   render () {
     return (
       <div className='menu'>
