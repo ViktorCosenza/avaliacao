@@ -20,7 +20,7 @@ class Comment extends React.Component {
           style={{ backgroundImage: `url(${this.state.image})` }}
         />
         <div className='message'>
-          <strong>Name </strong> <br />
+          <strong> {this.state.user} </strong> <br />
           {this.state.message}
           <div className='time'>
             {this.state.time}
