@@ -9,8 +9,9 @@ function App () {
   return (
     <div className='App'>
       <header>
-        <Menu> I am a children </Menu>
+        Page Overview
       </header>
+      <Menu />
       <div className='main-content'>
 
         <div className='graph'>

@@ -1,17 +1,25 @@
-.main-content {
-  display: flex;
-  height: 500px;
+.App header {
+  margin: 1% 0 0 1%;
+  font-size: 32px;
+  font-weight: 500;
+  color: #6c6c6c
 }
+
+.main-content {
+  display: flexbox;
+  height: 600px;
+  align-items: stretch
+}
+
 
 .graph {
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
   border-radius: 25px;
-  display: inline-block;
   margin: 1%;
   width: 60%;
   background-color: white;
-  position: absolute;
-  left:0;
+  float: left;
+  display: flexbox;
 }
 
 .graph header {
@@ -25,14 +33,13 @@
 .reports {
   color: #6c6c6c;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
-  display: inline-block;
   margin: 1%;
   width: 32%;
-  height: 376px;
+  height: 100%;
   border-radius: 25px;
   background-color: white;
-  position: absolute;
-  right:0;
+  float: right;
+  display: flexbox;
 }
 
 .reports header {
