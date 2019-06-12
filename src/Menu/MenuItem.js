@@ -11,6 +11,13 @@ class MenuItem extends React.Component {
       icon: this.props.icon
     }
   }
+  // TODO remove this ;s
+  componentWillReceiveProps (props) {
+    this.setState({
+      name: props.name,
+      value: props.value
+    })
+  }
 
   render () {
     return (
@@ -18,10 +25,10 @@ class MenuItem extends React.Component {
         <div className='icon'> <i className={this.props.icon} /> </div>
         <div className='text'>
           <div className='title'>
-            {this.state.name}
+            {this.state.value}
           </div>
           <div className='count'>
-            {this.state.value}
+            {this.state.name}
           </div>
         </div>
       </div>
