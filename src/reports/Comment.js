@@ -6,9 +6,9 @@ class Comment extends React.Component {
     super(props)
     this.state = {
       user: this.props.user,
-      image: this.props.image || 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png',
-      message: this.props.message || 'Voluptate consectetur commodo reprehenderit deserunt aliqua eiusmod fugiat nulla aute mollit anim id.',
-      time: this.props.time || '3 mins ago'
+      image: this.props.image,
+      message: this.props.message,
+      time: this.props.time
     }
   }
 

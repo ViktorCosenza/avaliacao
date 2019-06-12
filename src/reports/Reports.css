@@ -1,51 +1,25 @@
 .comments-container {
   height: 100%;
-  position: absolute;
+  width: 100%;
 }
 
 .comment-list {
   position: relative;
-  height: 70%;
-  max-height: 100%;
+  height: 80%;
   overflow-y: auto;
   margin: 0;
   padding-right: 5px;
   padding-left: 5px;
   padding-top: 5px;
-  padding-bottom: 20px;
   border-bottom: 1px solid #f6f6f6
 }
 
-.new-comment {
-  width: 85%;
-  padding: 3%;
-  position: absolute;
-  bottom: 12%;
-  left: 3%;
-}
 
-.new-comment input[type=text]{
-  border: none;
-  outline: none;
-}
-
-.new-comment input[type=submit]{
-  background-color: white;
-  color: #4c84ff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  position: absolute;
-  right:0;
-}
 
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
-
-
 
 /* Track */
 ::-webkit-scrollbar-track {

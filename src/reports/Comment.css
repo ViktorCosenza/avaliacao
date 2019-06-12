@@ -1,4 +1,6 @@
 .comment {
+  display: flex;
+  align-items: stretch;
   margin: 2%;
   padding: 3%;
 }
@@ -7,16 +9,21 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: inline-block;
   border-radius: 50%;
+  min-width: 30px;
+  min-height: 30px;
   width: 30px;
   height: 30px;
   margin-right:5%;
+  float: left;
 }
 
 .message {
-  display: inline-block;
+  float: right;
+  display: flexbox;
   font-size: smaller;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 .time {
