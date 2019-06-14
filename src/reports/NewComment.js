@@ -17,6 +17,7 @@ class NewComment extends React.Component {
 
   handleSubmit (event) {
     event.preventDefault()
+    if (this.state.value === '') { return }
     const comment = {
       user: 'NAVER',
       image: 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png',
