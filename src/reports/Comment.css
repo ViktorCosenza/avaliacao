@@ -1,6 +1,5 @@
 .comment {
   display: flex;
-  align-items: stretch;
   margin: 2%;
   padding: 3%;
 }
@@ -20,7 +19,6 @@
 
 .message {
   float: right;
-  display: flexbox;
   font-size: smaller;
   overflow-x: hidden;
   overflow-wrap: break-word;

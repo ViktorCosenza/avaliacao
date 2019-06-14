@@ -1,5 +1,14 @@
-.menu ul {
-  margin-top: 1%;
-  background-color: inherit;
-  padding-inline-start: 0;
+.menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex: 0 1 15vh;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    flex: 1;
+  }
 }
