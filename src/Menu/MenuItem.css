@@ -1,19 +1,10 @@
-/* .item {
-  display: inline-block;
-  width: 21%;
-  padding: 1% 1% 1% 1%;
-  margin: 1% 1% 1% 1%;
-  border-radius: 15px;
-  box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
-} */
-
 .item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  padding: 1% 1% 1% 1%;
+  padding: 1% 2% 1% 2%;
   margin: 1% 1% 1% 1%;
   border-radius: 15px;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
@@ -41,14 +32,20 @@
 
 .title {
   font-weight: bold;
+  font-size: xx-large;
 }
 .count {
   font-weight: normal;
+  font-size: large;
 }
 
 @media (max-width: 768px) {
   .item {
     flex: 1 1 40vw;
+    margin-bottom: 1vh;
+  }
+  .icon {
+    padding: 5%;
   }
 }
 

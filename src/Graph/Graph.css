@@ -1,6 +1,6 @@
 .bar-chart {
   display: flex;
+  height: fit-content;
   flex: 1;
   overflow: auto;
-  max-width: 100%;
 }
