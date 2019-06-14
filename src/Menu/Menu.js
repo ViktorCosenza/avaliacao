@@ -32,12 +32,10 @@ class Menu extends React.Component {
   render () {
     return (
       <div className='menu'>
-        <ul>
-          <MenuItem color='#29cb97' name='Visitors' value={this.state.visitors} icon='fas fa-eye fa-3x' />
-          <MenuItem color='#fec400' name='Users' value={this.state.users} icon='fas fa-users fa-3x' />
-          <MenuItem color='#4c84ff' name='Sales' value={this.state.sales} icon='fas fa-dollar-sign fa-3x' />
-          <MenuItem color='#ca66ff' name='Orders' value={this.state.orders} icon='fas fa-shopping-cart fa-3x' />
-        </ul>
+        <MenuItem color='#29cb97' name='Visitors' value={this.state.visitors} icon='fas fa-eye fa-3x' />
+        <MenuItem color='#fec400' name='Users' value={this.state.users} icon='fas fa-users fa-3x' />
+        <MenuItem color='#4c84ff' name='Sales' value={this.state.sales} icon='fas fa-dollar-sign fa-3x' />
+        <MenuItem color='#ca66ff' name='Orders' value={this.state.orders} icon='fas fa-shopping-cart fa-3x' />
       </div>
     )
   }
