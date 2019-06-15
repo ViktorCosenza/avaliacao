@@ -1,6 +1,7 @@
 .new-report {
   display: flex;
   flex-direction: row;
+  align-self: flex-end;
   width: 100%;
   height: 3rem;
   border-radius: 25px;
