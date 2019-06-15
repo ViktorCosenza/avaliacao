@@ -6,7 +6,7 @@
 }
 
 .App header {
-  margin: 1% 0 0 1%;
+  margin: 1% 0 2% 1%;
   font-size: 32px;
   font-weight: 500;
   color: #6c6c6c
@@ -45,6 +45,7 @@
 .reports {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   color: #6c6c6c;
   box-shadow: 0 0 6px 1px rgba(188, 188, 188, 0.5);
   margin: 1%;
@@ -66,9 +67,9 @@
   .App {
     height: 60vh;
   }
+
   .main-content {
     flex: 3;
-    
   }
   .graph {
     flex: 1;
@@ -84,20 +85,20 @@
   .App {
     height: unset;
   }
-  .main-content {
-    margin-bottom: 10vh;
-  }
+
 
   .graph {
-    min-height: 40vh;
+    min-height: fit-content;
+    flex: 2 0 40vh;
   }
 
   .reports {
-    min-height: 60vh;
+    max-height: 95vh;
+    flex: 3;
   }
 
   .main-content {
     flex-direction: column;
-    flex: 1 1 60vh;
+    flex: 2;
   }
 }
