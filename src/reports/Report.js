@@ -1,7 +1,7 @@
 import React from 'react'
-import './Comment.css'
+import './Report.css'
 
-class Comment extends React.Component {
+class Report extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -14,7 +14,7 @@ class Comment extends React.Component {
 
   render () {
     return (
-      <div className='comment'>
+      <div className='report'>
         <div
           className='avatar'
           style={{ backgroundImage: `url(${this.state.image})` }}
@@ -30,4 +30,4 @@ class Comment extends React.Component {
     )
   }
 }
-export default Comment
+export default Report

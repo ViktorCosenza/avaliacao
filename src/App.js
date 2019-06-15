@@ -3,7 +3,7 @@ import './App.css'
 
 import Menu from './Menu/Menu'
 import Graph from './Graph/Graph'
-import Reports from './reports/Reports'
+import ReportsTab from './reports/ReportsTab'
 
 function App () {
   return (
@@ -23,9 +23,8 @@ function App () {
 
         <div className='reports'>
           <header> Reports </header>
-          <Reports />
+          <ReportsTab />
         </div>
-
       </div>
     </div>
   )

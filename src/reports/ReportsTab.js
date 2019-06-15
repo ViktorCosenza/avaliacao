@@ -2,14 +2,14 @@ import React from 'react'
 import axios from 'axios'
 import './ReportsTab.css'
 
-import Comment from './Comment'
-import NewComment from './NewComment'
+import Report from './Report'
+import NewReport from './NewReport'
 
 class ReportsTab extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      comments: []
+      reports: []
     }
     this.lastReport = React.createRef()
     this.scrollToBottom = this.scrollToBottom.bind(this)
@@ -17,13 +17,13 @@ class ReportsTab extends React.Component {
   }
 
   scrollToBottom () {
-    this.lastReport.current.scrollIntoView({ behavior: 'smooth', block: 'end' })
+    this.lastReport.current.scrollIntoView({ behavior: 'instant', block: 'end' })
   }
 
   componentDidMount () {
     axios.get('https://my-json-server.typicode.com/viktorcosenza/avaliacao/reports')
       .then(response => {
-        this.setState({ comments: response.data })
+        this.setState({ reports: response.data })
       })
   }
 
@@ -32,32 +32,32 @@ class ReportsTab extends React.Component {
   }
 
   handleSubmit (props) {
-    const comments = this.state.comments
-    comments.push({
+    const reports = this.state.reports
+    reports.push({
       user: props.user,
       image: props.image,
       message: props.message,
       time: props.time
     })
-    this.setState({ comments: comments })
+    this.setState({ reports: reports })
   }
 
   render () {
     return (
       <div className='reports-container'>
-        <div className='reports-list' ref={this.commentList}>
-          {this.state.comments.map((comment, idx) =>
-            <Comment
+        <div className='reports-list'>
+          {this.state.reports.map((report, idx) =>
+            <Report
               key={idx}
-              user={comment.user}
-              image={comment.image}
-              time={comment.time}
-              message={comment.message}
+              user={report.user}
+              image={report.image}
+              time={report.time}
+              message={report.message}
             />
           )}
           <div ref={this.lastReport} />
         </div>
-        <NewComment onSubmit={this.handleSubmit} />
+        <NewReport onSubmit={this.handleSubmit} />
       </div>
     )
   }
