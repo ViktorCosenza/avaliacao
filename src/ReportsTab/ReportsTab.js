@@ -17,7 +17,7 @@ class ReportsTab extends React.Component {
   }
 
   scrollToBottom () {
-    this.lastReport.current.scrollIntoView({ behavior: 'instant', block: 'end' })
+    this.lastReport.current.scrollIntoView({ behavior: 'instant', block: 'start' })
   }
 
   componentDidMount () {
@@ -43,18 +43,29 @@ class ReportsTab extends React.Component {
   }
 
   render () {
+    let reports = this.state.reports.map((report, idx) =>
+      <Report
+        key={idx}
+        user={report.user}
+        image={report.image}
+        time={report.time}
+        message={report.message}
+      />
+    )
+    if (reports.length === 0) {
+      reports = <Report
+        key={0}
+        user='Sales Reports App'
+        image='https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png'
+        time='Right now'
+        message='No one has reported yet :('
+      />
+    }
+
     return (
       <div className='reports-container'>
         <div className='reports-list'>
-          {this.state.reports.map((report, idx) =>
-            <Report
-              key={idx}
-              user={report.user}
-              image={report.image}
-              time={report.time}
-              message={report.message}
-            />
-          )}
+          {reports}
           <div ref={this.lastReport} />
         </div>
         <NewReport onSubmit={this.handleSubmit} />
