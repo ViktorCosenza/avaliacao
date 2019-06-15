@@ -3,7 +3,7 @@ import './App.css'
 
 import Menu from './Menu/Menu'
 import Graph from './Graph/Graph'
-import ReportsTab from './reports/ReportsTab'
+import ReportsTab from './ReportsTab/ReportsTab'
 
 function App () {
   return (
