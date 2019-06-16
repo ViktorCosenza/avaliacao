@@ -1,3 +1,12 @@
+## Dependencias
++ axios
++ react-chartjs-2 (react wrapper para o Chartjs)
++ ChartJs
+
+## Run
++ npm install
++ npm start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
